@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+    - name: session
+      description: "session table with start and end time"
+      columns:
+          - name: session_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: user
+      description: "user table with country"
+      columns:
+          - name: user_key
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
